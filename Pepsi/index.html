@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./images/logo.44fea4ca40e8a8843bb0fdf07d618439.png" alt=""></a>
+            <div class="toggleMenuNavbar" onclick="menuToggle();"></div>
+            <ul class="navbar">
+                <li><a href="#">VIEW PRODUCTS</a></li> 
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">NEWSLETTER</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+            <a class="btn">BUY PEPSI PRODUCTS</a>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h1>ALL YOUR<br><span>FAVORITE FLAVORS.</span><br><span>ALL RIGHT HERE.</span></h1>
+                <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p>
+                <a class="btn-view" href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="list-img">
+            <li><img src="./images/pepsi001.png" alt="PepsiNormal" onclick="imgSlider('./images/pepsi001.png');changeBackgroundColor('#0062be')"></li>
+            <li><img src="./images/pepsi002.png" alt="PepsiDiet" onclick="imgSlider('./images/pepsi002.png');changeBackgroundColor('#AFB4FF')"></li>
+            <li><img src="./images/pepsi003.png" alt="PepsiZeroSugar" onclick="imgSlider('./images/pepsi003.png');changeBackgroundColor('#1e1e1e')"></li>
+            <li><img src="./images/pepsi004.png" alt="PepsiMango" onclick="imgSlider('./images/pepsi004.png');changeBackgroundColor('#FF731D')"></li>
+            <li><img src="./images/pepsi005.png" alt="PepsiCherry" onclick="imgSlider('./images/pepsi005.png');changeBackgroundColor('#EB4747')"></li>
+            <li><img src="./images/pepsi006.png" alt="PepsiZeroSugarMango" onclick="imgSlider('./images/pepsi006.png');changeBackgroundColor('#FF731D')"></li>    
+            <li><img src="./images/pepsi007.png" alt="PepsiZeroSugarCherry" onclick="imgSlider('./images/pepsi007.png');changeBackgroundColor('#D800A6')"></li>          
+        </ul>
+        <ul class="social">
+            <li><a href="#"><i class="fab fa-twitter" alt="Twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram" alt="Instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube" alt="Youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook" alt="Facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-tiktok" alt="TikTok"></i></a></li>
+        </ul>
+    </section>
+</body>
+</html>

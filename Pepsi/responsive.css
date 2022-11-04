@@ -1,0 +1,135 @@
+@media (max-width: 991px) {
+    section{
+        padding: 40px;
+    }
+
+    header{
+        padding: 10px 20px;
+        height: 100px;
+    }
+
+    header .logo{
+        position: relative;
+        max-width: 60px;
+    }
+
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
+        background-color: #7FBCD2;
+    }
+
+    header ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: #161414;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 40px;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+
+    header .toggleMenuNavbar{
+        position: relative;
+        width: 40px;
+        height: 65px;
+        background: url(./images/menu.png) center 30px no-repeat;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 33px;
+    }
+
+    .toggleMenuNavbar.active{
+        background: url(./images/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        margin: 0;
+        filter: invert(1);
+    }
+
+    header ul li a:hover{
+        color: var(--color-main);
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .content .textBox{
+        position: relative;
+        max-width: 100%;
+    }
+
+    .content .textBox h1{
+        font-size: 45px;
+    }
+
+    .content .textBox h1 span{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    
+    .content .textBox p{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: var(--color-text);
+    }
+
+    .content .textBox .btn-view{
+        padding: 8px 10px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .content .imgBox {
+        width: 100%;
+        display: flex;
+        padding-right: 0;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .content .imgBox img{
+        max-width: 180px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .social{
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateY(50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in;
+        width: 50px;
+        background-color: rgb(58, 85, 206);
+    }
+}
