@@ -131,6 +131,16 @@
     footer .footer-after{
         flex-flow: column ;
     }
+
+    /* Contact */
+
+    #form-details{
+        padding: 40px;
+    }
+
+    #form-details form{
+        width: 50%;
+    }
 }
 
 @media (max-width: 477px){
@@ -203,5 +213,90 @@
     #prodetails .single-prod-details{
         width: 100%;
         
+    }
+
+    /* !BLOG */
+
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-right: 30px;
+    }
+
+    #blog .blog-details{
+        width: 100%;
+    }
+
+    /* ! ABOUT */
+
+    #about-head{
+        flex-direction: column;
+    }
+
+    #about-head img{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #about-head .about-box{
+        padding-left: 0;
+    }
+
+    #about-head .video{
+        width: 100%;
+    }
+
+    /* Contact */
+
+    #contact-details{
+        flex-direction: column;
+    }
+
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map{
+        width: 100%;
+    }
+
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* !CART */
+
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }

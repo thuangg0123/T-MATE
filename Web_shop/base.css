@@ -98,3 +98,15 @@ button.btn-2{
     color: #000;
     font-weight: 700;
 }
+
+@keyframes hidden {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
